@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyecto Final | NotiPushUPIIZ</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <a href="index3.html" class="brand-link">
+        <img src="dist/img/67.png" alt="Logo UPIIZ" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">UPIIZ</span>
+      </a>
+
+      <div class="sidebar">
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item menu-open">
+
+            <li class="nav-item">
+              <a href="notificaciones.html" class="nav-link">
+                <i class="fas fa-bell"></i>
+                <p>
+                  Notificaciones
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="agrupamiento.html" class="nav-link">
+                <i class="fas fa-user-friends"></i>
+                <p>
+                  Agrupamiento
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-sign-out-alt"></i>
+                <p>
+                  Salir
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Enviar notificación</h3>
+                  <ul class="pagination pagination-sm m-0 float-right">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                      Nuevo
+                    </button>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th style="width: 10px">Asunto</th>
+                        <th>Grupo</th>
+                        <th>Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Becas</td>
+                        <td>Todos</td>
+                        <td><button type="button" class="btn btn-block btn-outline-primary" data-toggle="modal" data-target="#myModal1">Ver</button></td>
+                      </tr>
+                      <tr>
+                        <td>Credenciales</td>
+                        <td>Todos</td>
+                        <td><a href="#">Ver</a></td>
+                      </tr>
+                      <tr>
+                        <td>BEIFI</td>
+                        <td>Grupo BEIFI</td>
+                        <td><a href="#">Ver</a></td>
+                      </tr>
+                      <tr>
+                        <td>Delfín</td>
+                        <td>Grupo Delfín</td>
+                        <td><a href="#">Ver</a></td>
+                      </tr>
+                    </tbody>
+                </div>
+                </table>
+              </div>
+                <div class="modal fade" id="modal-default">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Nueva notificación</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="card-body">
+                        <form>
+                          <div class="row">
+                            <div class="modal-body">
+                              <!-- text input -->
+                              <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Asunto">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" class="form-control" rows="3" placeholder="Descripción">
+                              </div>
+                              <div class="form-group">
+                                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                            <option selected="selected" data-select2-id="0">Seleccione un grupo</option>
+                                          </select>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-left"
+                                  data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Enviar</button>
+                              </div>
+                            </div>
+                            <!-- /.modal-content -->
+                          </div>
+                          <!-- /.modal-dialog -->
+                      </div>
+                      <!-- /.modal -->
+
+                  </div>
+                </div>
+                <div id="myModal1" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Notificación</h4>
+                        </div>
+                        <div class="modal-body">
+                          <!-- SEARCH FORM -->
+                          <div class="col-md-16">
+                            <div class="card">
+                              <div class="card-header">
+                              </div>
+                              <!-- /.card-header -->
+                              <div class="card-body">
+                                <dl class="row">
+                                  <dt class="col-sm-4">Asunto:</dt>
+                                  <dd class="col-sm-8">Reunión</dd>
+                                  <dt class="col-sm-4">Destinatarios:</dt>
+                                  <dd class="col-sm-8">Academia de Sistemas</dd>
+                                  <dt class="col-sm-8">Descripción</dd>
+                                  <dd class="col-sm-8">Se le cita a una reunión de academia el próximo jueves 10 de diciembre</dt>
+                                  <dt class="col-sm-6">Fecha:</dt>
+                                  <dd class="col-sm-8">23 de noviembre de 2020</dd>
+                                </dl>
+                              </div>
+                              <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- ./col -->
+                        </div>
+                          <ul class="pagination pagination-sm m-8 float-right">
+                        <button type="button" class="btn btn-default pull-right"
+                        data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </form>
+                    </ul>
+              </div>
+            </div>
+          </div>
+         </div> 
+    </div>
+  </div>
+  <!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+</body>
+</html>
